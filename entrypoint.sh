@@ -29,13 +29,13 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plug
 ###############################################################
 
 git clone https://github.com/hepheir/oj-backend
-cd OnlineJudge
+cd oj-backend
 docker build -t hepheir/oj-backend .
 
 cd ..
 
 git clone https://github.com/hepheir/oj-judge
-cd JudgeServer
+cd oj-judge
 git submodule init
 git submodule update
 docker build -t hepheir/oj-judge .
